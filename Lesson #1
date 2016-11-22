@@ -1,2 +1,11 @@
-import java.util.Scanner; 
-hi haley
+/*CSCI 1100 - Assignment 3 - Math is Fun!
+      
+                    <> <> <> */
+
+import java.util.Scanner;
+public class MathisFun{
+   public static void main (String [] args){
+      Scanner kb = new Scanner (System.in);
+      
+   }
+}
