@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MathisFun{
    public static void main (String [] args){
       Scanner kb = new Scanner (System.in);
-      
+      fefweewew
       System.out.print(
    }
 }
