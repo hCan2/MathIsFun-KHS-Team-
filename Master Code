@@ -82,6 +82,39 @@ public class MathisFun{
       }
    }
    
+   public static void level3Quest(){
+      Scanner kb = new Scanner (System.in); 
+      Random random = new Random ();
+         
+      System.out.println("Questions:");
+      
+      //this for loop will run until the quest is completed
+      for (int i = 1; i <= 10; i++){
+         
+         //this will declare the variable number, and initalize it as a random value 
+         int number = random.nextInt(10 - 1) + 1;
+         
+         //this will declare variable num2, and initalize it as a random value
+         int num2 = random.nextInt(10 - 1) + 1;
+         
+         //this calculates the total 
+         int total = (number * num2);
+            
+         //this prints the math equation
+         System.out.println("\n"+i+". " + number + "* ___ = " + total);
+         
+         //this askes the user to input a guess to fill in the blank
+         System.out.print("Fill in the blank: "); 
+         int guess = kb.nextInt();
+          
+         //assesses if the guess is correct or not
+         if (number * guess == total){
+            System.out.println("You are correct!");
+         } else{
+            System.out.println("Try again, the correct answer was " + num2 +". ");
+         }
+      }
+   }
    
    public static void level4Quest(){
       Scanner kb = new Scanner (System.in); 
