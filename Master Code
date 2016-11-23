@@ -7,9 +7,39 @@ public class MathisFun{
    public static void main (String [] args){
       Scanner kb = new Scanner (System.in);
 
-      System.out.print(
    }
    
-   public static void LT1
+   public static void level1Quest(){
+      Scanner kb = new Scanner (System.in); 
+      Random random = new Random ();
+     
+      System.out.println("Questions:");
+      for (int i = 1; i <= 10; i++){
+         int number = random.nextInt(10);
+         int num2 = random.nextInt(10);
+         
+         int total = (num2 + number);
+         
+         System.out.println("\n"+i+". " + number + "+ ___ = " + total);
+         
+         System.out.print("Fill in the blank: "); 
+         int guess = kb.nextInt();
+         
+         if (number + guess == total){
+            System.out.println("You are correct!");
+         }else{
+            System.out.println("Try again");
+         }
+      }
+      
+   
+   }
+
+
+
+
+
 }
+
+
 
